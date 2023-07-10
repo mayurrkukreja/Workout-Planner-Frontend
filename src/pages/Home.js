@@ -10,7 +10,7 @@ const Home = () => {
 
     useEffect(() => {
         const fetchWorkouts = async () => {
-            const response = await fetch('https://workout-planner-backend.onrender.com/api/workouts')
+            const response = await fetch('https://workout-planner-frontend.vercel.app/api/workouts')
             const json = await response.json()
             console.log(json)
 
