@@ -12,7 +12,7 @@ function App() {
       <Navbar/>
         <div className="pages">
           <Routes>
-            <Route path="https://workout-planner-frontend.vercel.app/api/workouts" element={<Home/>}
+            <Route path="/" element={<Home/>}
             />
           </Routes>
         </div>
