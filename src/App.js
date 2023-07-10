@@ -3,7 +3,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 // pages and components
 import Navbar from './components/Navbar'
 import Home from './pages/Home'
-const baseUrl = 'https://workout-planner-backend.onrender.com/';
+
 
 function App() {
   return (

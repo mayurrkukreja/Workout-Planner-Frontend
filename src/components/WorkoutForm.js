@@ -1,6 +1,5 @@
 import { useState } from 'react'
 import { useWorkoutsContext } from '../hooks/useWorkoutsContext'
-import {baseUrl} from '../App'
 
 const WorkoutForm = () => {
     const { dispatch } = useWorkoutsContext()
@@ -14,7 +13,7 @@ const WorkoutForm = () => {
 
         const workout = {title, reps, load}
 
-        const response = await fetch(baseUrl + '/api/workouts', {
+        const response = await fetch('https://workout-planner-backend.onrender.com/api/workouts', {
             method: 'POST',
             body: JSON.stringify(workout),
             headers: {'Content-Type': 'application/json'}
