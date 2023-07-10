@@ -2,6 +2,7 @@ import { useEffect } from 'react'
 import WorkoutDetails from '../components/WorkoutDetails'
 import WorkoutForm from '../components/WorkoutForm'
 import { useWorkoutsContext } from '../hooks/useWorkoutsContext'
+import {baseUrl} from '../App'
 
 const Home = () => {
 
@@ -10,7 +11,7 @@ const Home = () => {
 
     useEffect(() => {
         const fetchWorkouts = async () => {
-            const response = await fetch('/api/workouts')
+            const response = await fetch(baseUrl + '/api/workouts')
             const json = await response.json()
             console.log(json)
 
